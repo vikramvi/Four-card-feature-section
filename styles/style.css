@@ -48,7 +48,7 @@ html {
 
 body {
   /* 16px */
-  font-size: 1.6em;
+  font-size: 1.6rem;
   font-family: "Outfit", sans-serif;
 
   height: 100vh;
@@ -78,6 +78,40 @@ img {
   gap: 2rem;
 }
 
+.role-card {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "role-card__title"
+    "role-card__info"
+    "role-card__icon";
+  gap: 1rem;
+  margin: 0.4rem 2.2rem;
+  border: 2px solid green;
+  justify-self: center;
+  border-radius: 1rem;
+}
+
+.role-card__title {
+  font-size: 1.8rem;
+  font-weight: var(--fw-600);
+  max-width: max-content;
+  margin: 2rem 0 0 2rem;
+}
+
+.role-card__info {
+  width: 90%;
+  max-width: max-content;
+  margin: 0 0 3rem 2rem;
+  line-height: 1.5;
+}
+
+.role-card__icon {
+  justify-self: end;
+  margin: 0 3.5rem 2rem 0;
+}
+
 /* -------- Desktop 2nd approach -------- */
 
 /* -------- Grid Area Names -------- */
@@ -96,25 +130,37 @@ img {
 .role-card-supervisor {
   grid-area: role-card-supervisor;
   /* debug purpose only */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .role-card-team-builder {
   grid-area: role-card-team-builder;
   /* debug purpose only */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .role-card-karma {
   grid-area: role-card-karma;
   /* debug purpose only */
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .role-card-calculator {
   grid-area: role-card-calculator;
   /* debug purpose only */
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
+}
+
+.role-card__title {
+  grid-area: role-card__title;
+}
+
+.role-card__info {
+  grid-area: role-card__info;
+}
+
+.role-card__icon {
+  grid-area: role-card__icon;
 }
 
 /* -------- default style : provided by tamplate  -----------  */
