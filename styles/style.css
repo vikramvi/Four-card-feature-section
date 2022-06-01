@@ -5,7 +5,9 @@
 /* Use Required Google Font with Weights */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
+/* ----------- ----------- ----------- ----------- */
 /* -------- generic style -----------  */
+/* ----------- ----------- ----------- ----------- */
 
 :root {
   /* color related */
@@ -59,7 +61,63 @@ img {
   display: block;
 }
 
+/* ----------- ----------- ----------- ----------- */
 /* -------- specific style -----------  */
+/* ----------- ----------- ----------- ----------- */
+
+/* -------- Mobile 1st approach -------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header-card"
+    "role-card-supervisor"
+    "role-card-team-builder"
+    "role-card-karma"
+    "role-card-calculator";
+  gap: 2rem;
+}
+
+/* -------- Desktop 2nd approach -------- */
+
+/* -------- Grid Area Names -------- */
+.grid-container {
+  grid-area: grid-container;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+.header-card {
+  grid-area: header-card;
+  /* debug purpose only */
+  border: 1px solid blue;
+}
+
+.role-card-supervisor {
+  grid-area: role-card-supervisor;
+  /* debug purpose only */
+  border: 1px solid black;
+}
+
+.role-card-team-builder {
+  grid-area: role-card-team-builder;
+  /* debug purpose only */
+  border: 1px solid blue;
+}
+
+.role-card-karma {
+  grid-area: role-card-karma;
+  /* debug purpose only */
+  border: 1px solid green;
+}
+
+.role-card-calculator {
+  grid-area: role-card-calculator;
+  /* debug purpose only */
+  border: 1px solid pink;
+}
+
+/* -------- default style : provided by tamplate  -----------  */
 
 /* .attribution {
   font-size: 11px;
