@@ -120,7 +120,7 @@ img {
   justify-self: center;
   border-radius: 1rem;
   /* debug purpose only */
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .role-card__title {
@@ -144,17 +144,57 @@ img {
 
 /* -------- Desktop 2nd approach -------- */
 
+@media screen and (min-width: 40em) {
+  .grid-container {
+    /* based on total cards measurement this number is derived */
+    width: 1010px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* taken 32 rem from mobile view measurement for card */
+    grid-template-columns: repeat(3, 32rem);
+    grid-template-areas:
+      "header-card header-card header-card"
+      "role-card-supervisor role-card-team-builder role-card-calculator"
+      "role-card-supervisor role-card-karma role-card-calculator";
+  }
+
+  .role-card {
+    /* have fixed size for width */
+    width: 31.9rem;
+    max-width: 31.9rem;
+    /* have fixed size for height */
+    height: 22.2rem;
+    max-height: 22.2rem;
+  }
+
+  .header-card__info {
+    /* instead of adding margin / padding used this approach */
+    /* % width of parent element always, instead of fixed margin or padding units */
+    width: 65%;
+    /* to center content */
+    margin: 0 auto;
+  }
+
+  .role-card-supervisor {
+    align-self: center;
+  }
+
+  .role-card-calculator {
+    align-self: center;
+  }
+}
+
 /* -------- Grid Area Names -------- */
 .grid-container {
   grid-area: grid-container;
   /* debug purpose only */
-  border: 1px solid red;
+  /* border: 3px solid red; */
 }
 
 .header-card {
   grid-area: header-card;
   /* debug purpose only */
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .role-card-supervisor {
