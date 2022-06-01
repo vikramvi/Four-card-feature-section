@@ -76,6 +76,35 @@ img {
     "role-card-karma"
     "role-card-calculator";
   gap: 2rem;
+  margin: 5rem 0 5rem 0;
+}
+
+.header-card {
+  width: 75%;
+  justify-self: center;
+}
+
+.header-card__header-1,
+.header-card__header-2,
+.header-card__info {
+  text-align: center;
+}
+
+.header-card__header-1 {
+  font-size: 2.5rem;
+  font-weight: var(--fw-200);
+  margin-bottom: 1rem;
+}
+
+.header-card__header-2 {
+  font-size: 2.5rem;
+  font-weight: var(--fw-600);
+  margin-bottom: 1.5rem;
+}
+
+.header-card__info {
+  line-height: 1.5;
+  margin: 0 1rem 0 1rem;
 }
 
 .role-card {
@@ -88,9 +117,10 @@ img {
     "role-card__icon";
   gap: 1rem;
   margin: 0.4rem 2.2rem;
-  border: 2px solid green;
   justify-self: center;
   border-radius: 1rem;
+  /* debug purpose only */
+  border: 2px solid green;
 }
 
 .role-card__title {
