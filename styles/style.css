@@ -120,6 +120,7 @@ img {
   justify-self: center;
   border-radius: 1rem;
   background-color: white;
+  box-shadow: 0 0 10px rgb(184, 182, 182);
   /* debug purpose only */
   /* border: 2px solid green; */
 }
