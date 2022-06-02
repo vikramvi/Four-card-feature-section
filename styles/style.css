@@ -176,12 +176,17 @@ img {
   }
 
   .role-card {
+    /* set row height as per content size */
+    /* this helps avoiding trial & error with margin or padding */
+    grid-template-rows: 40px 50px auto;
+
     /* have fixed size for width */
     width: 30.4rem;
     max-width: 30.4rem;
+
     /* have fixed size for height */
-    height: 22.2rem;
-    max-height: 22.2rem;
+    height: 19.2rem;
+    max-height: 19.2rem;
   }
 
   .role-card__info {
