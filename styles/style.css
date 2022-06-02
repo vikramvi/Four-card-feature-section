@@ -53,7 +53,7 @@ body {
 
   height: 100vh;
 
-  background-color: var(--color-main-bg);
+  background-color: rgb(243, 242, 242);
 }
 
 img {
@@ -119,6 +119,7 @@ img {
   margin: 0.4rem 2.2rem;
   justify-self: center;
   border-radius: 1rem;
+  background-color: white;
   /* debug purpose only */
   /* border: 2px solid green; */
 }
@@ -142,6 +143,22 @@ img {
   margin: 0 3.5rem 2rem 0;
 }
 
+.role-card-supervisor {
+  border-top: 0.3rem solid var(--clr-cyan);
+}
+
+.role-card-team-builder {
+  border-top: 0.3rem solid var(--clr-red);
+}
+
+.role-card-karma {
+  border-top: 0.3rem solid var(--clr-orange);
+}
+
+.role-card-calculator {
+  border-top: 0.3rem solid var(--clr-blue);
+}
+
 /* -------- Desktop 2nd approach -------- */
 
 @media screen and (min-width: 40em) {
@@ -149,7 +166,7 @@ img {
     /* based on total cards measurement this number is derived */
     width: 1010px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 5rem auto 0 auto;
     /* taken 32 rem from mobile view measurement for card */
     grid-template-columns: repeat(3, 32rem);
     grid-template-areas:
@@ -160,19 +177,36 @@ img {
 
   .role-card {
     /* have fixed size for width */
-    width: 31.9rem;
-    max-width: 31.9rem;
+    width: 30.4rem;
+    max-width: 30.4rem;
     /* have fixed size for height */
     height: 22.2rem;
     max-height: 22.2rem;
   }
 
+  .role-card__info {
+    width: 75%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--clr-grayish-blue);
+  }
+
+  .role-card__icon {
+    height: 5.4rem;
+    width: 5.4rem;
+    margin-right: 2.5rem;
+    margin-bottom: 0;
+  }
+
   .header-card__info {
     /* instead of adding margin / padding used this approach */
     /* % width of parent element always, instead of fixed margin or padding units */
-    width: 65%;
+    width: 55%;
     /* to center content */
     margin: 0 auto;
+    font-size: 1.3rem;
+    font-weight: var(--fw-200);
+    color: var(--clr-grayish-blue);
   }
 
   .role-card-supervisor {
