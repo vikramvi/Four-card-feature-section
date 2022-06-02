@@ -91,18 +91,19 @@ img {
 }
 
 .header-card__header-1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: var(--fw-200);
   margin-bottom: 1rem;
 }
 
 .header-card__header-2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: var(--fw-600);
   margin-bottom: 1.5rem;
 }
 
 .header-card__info {
+  font-size: 1.5rem;
   line-height: 1.5;
   margin: 0 1rem 0 1rem;
 }
